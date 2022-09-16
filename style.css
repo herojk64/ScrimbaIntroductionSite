@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    font-family:'Inter','Times New Roman', Times, serif;
+}
+
+/* settting default resets not wasting too much time in it cause im gona use minimum tags */
+body{
+    margin: 0;
+    padding:0;
+    min-height:100vh;
+    width: 100%;
+    background-color:#23252C;
+}
+div,
+h1,
+h2,
+h3,
+h4,
+span,
+p,
+a,
+ol,
+li,
+img,
+b,
+i,
+u{
+    margin:0;
+    padding:0;
+}
+ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* Starting to write css here */
+
+/* Setting up box sizing for container */
+.App{
+    display: flex;
+    min-height:100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.Container{
+    margin:44px auto;
+    width: 317px;
+    height: auto;
+    background-color: #1A1B21;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.Container > div,footer{
+    padding:0px 35px;
+}
+
+/* starting to work with components */
+
+/* image component */
+.img_Container{
+    height: 317px;
+    width: 317px;
+    overflow:hidden;
+    padding:0 !important;
+    
+}
+.img_Container > img{
+   height: 100%;
+    width: 100%;
+}
+/* Header component */
+.Header-Container{
+    text-align: center;
+    margin-top:21px;
+}
+.Header-Container > h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 6px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.Header-Container > h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 15px;
+    color: #F3BF99;
+    margin-bottom: 8px;
+}
+.Header-Container >h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 150%;
+    color: #F5F5F5;
+}
+/* button component  */
+
+.btn-Container{
+   
+    justify-content: center;
+    width: 100%;
+    margin-top:16px; 
+}
+
+.btn-Container > button{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 9px 13px;
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #374151;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+.btn-Container > button >img{
+    width: 16px;
+    height: 16px;
+    padding: 0;    
+}
+
+/* About component starts here */
+.about-Container{
+    margin-top:32px;
+}
+.about-Container > h4{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #F5F5F5;
+}
+.about-Container > p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 150%;
+    color: #DCDCDC;
+    margin-top:5px;
+}
+/* Interests component */
+.interests-Container{
+    margin-top: 25px;
+}
+.interests-Container > h4{
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 150%;
+color: #F5F5F5;
+}
+.interests-Container > p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 150%;
+    color: #DCDCDC;
+    margin-top:5px;
+}
+
+/* this is for footer component */
+.footer-Container{
+    background-color:#161619;
+    display: flex;
+    width:100%;
+    height: 64px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+.footer-Container > ol{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-Container > ol > li > a > img{
+    height: 25px;
+    width:25px;
+}
